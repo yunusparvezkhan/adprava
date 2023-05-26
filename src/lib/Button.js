@@ -1,6 +1,15 @@
 import React from 'react'
 
-const Button = ({ children }) => {
+const Button = ({
+    children,
+    primary,
+    secondary,
+    success,
+    warning,
+    danger,
+    outlined,
+    rounded
+}) => {
     return (
         <div>
             <button>{children}</button>
