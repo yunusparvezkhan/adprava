@@ -34,9 +34,9 @@ Button.propTypes = {
         if (sumnum === 1) {
             console.log("Good Input");
         } else if (sumnum === 0) {
-            console.log("Please provide the type of button as a prop on the Button jsx element");
+            return new Error("Please provide the type of button as a prop on the Button jsx element");
         } else {
-            console.log("Please provide only one button type as a prop on the Button jsx element");
+            return new Error("Please provide only one button type as a prop on the Button jsx element");
         };
     }
 }
