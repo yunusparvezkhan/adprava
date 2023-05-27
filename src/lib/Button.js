@@ -12,13 +12,18 @@ const Button = ({
     rounded
 }) => {
     const [btntype, setBtntype] = useState('');
+    let dummyvar = false;
 
     useEffect(() => {
-        primary === true ? setBtntype('rounded-none') : setBtntype('');
+        primary === true ? setBtntype('bg-blue-500 text-white block text-sm my-5 py-2 px-5 rounded-full') : dummyvar = !dummyvar;
+        secondary === true ? setBtntype('bg-purple-700 text-white block text-sm my-5 py-2 px-5 rounded-full') : dummyvar = !dummyvar;
+        success === true ? setBtntype('bg-green-500 text-white block text-sm my-5 py-2 px-5 rounded-full') : dummyvar = !dummyvar;
+        warning === true ? setBtntype('bg-yellow-500 text-white block text-sm my-5 py-2 px-5 rounded-full') : dummyvar = !dummyvar;
+        danger === true ? setBtntype('bg-red-500 text-white block text-sm my-5 py-2 px-5 rounded-full') : dummyvar = !dummyvar;
     }, []);
     return (
         <div>
-            <button className={"bg-purple-700 text-white block text-sm my-5 py-2 px-5 rounded-full"}>{children}</button>
+            <button className={btntype}>{children}</button>
         </div>
     )
 }
