@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 const Button = ({
     children,
@@ -15,6 +16,29 @@ const Button = ({
             <button>{children}</button>
         </div>
     )
+}
+
+Button.propTypes = {
+    checkVariationValue: ({
+        primary,
+        secondary,
+        success,
+        warning,
+        danger
+    }) => {
+        const sumnum = Number(!!primary)
+            + Number(!!secondary)
+            + Number(!!success)
+            + Number(!!warning)
+            + Number(!!danger);
+        if (sumnum === 1) {
+            console.log("Good Input");
+        } else if (sumnum === 0) {
+            console.log("Please provide the type of button as a prop on the Button jsx element");
+        } else {
+            console.log("Please provide only one button type as a prop on the Button jsx element");
+        };
+    }
 }
 
 export default Button;
