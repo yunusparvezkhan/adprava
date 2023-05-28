@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import classNames from 'classnames';
 
 
@@ -12,15 +12,6 @@ const Button = ({
     outlined,
     rounded
 }) => {
-    // These states & variables are not of use after this commit (v1 Delta 1.11). For more information read line 40. ---------
-    const [btncolor, setBtncolor] = useState('');                                                               //  x
-    const [btnroundness, setBtnroundness] = useState('');                                                      //   x
-    const [btnoutline, setBtnoutline] = useState('');                                                         //    x
-    let dummyvar = false;                                                                                    //     x
-    //                                                                                                      //      x
-    //-------------------------------------------------------------------------------------------------------
-
-
     // Used classNames npm package for creating a string for the className of button element.
     const finalClassName = classNames({
         'bg-blue-500 border-blue-600': primary,
@@ -36,27 +27,9 @@ const Button = ({
         'px-5': true,
     })
 
-
-    // The className logic previously achived in this manner using the useEffect() func and state system.
-    // ----------------- This code is not in charge after this commit (v1 Delta 1.11) ---------------------
-    useEffect(() => {                                                                                     //    x
-        primary === true ? setBtncolor('blue') : dummyvar = !dummyvar;                                   //     x
-        secondary === true ? setBtncolor('purple') : dummyvar = !dummyvar;                              //      x   
-        success === true ? setBtncolor('green') : dummyvar = !dummyvar;                                //       x
-        warning === true ? setBtncolor('yellow') : dummyvar = !dummyvar;                              //        x
-        danger === true ? setBtncolor('red') : dummyvar = !dummyvar;                                 //         x
-        outlined === true ? setBtnoutline('border-2') : dummyvar = !dummyvar;                       //          x
-        rounded === true ? setBtnroundness('rounded-full') : dummyvar = !dummyvar;                 //           x
-    }, []);                                                                                       //            x
-    // --------------------------------------------------------------------------------------------------------
-
     return (
         <div>
             <button className={finalClassName}>{children}</button>
-
-            {/* This was the button className logic used previously for the useEffect and State method, mentioned in line 40 ------------------------------------               */}
-            {/* <button className={` ${btnroundness} bg-${btncolor}-500 ${btnoutline} border-${btncolor}-600 text-white m-5 py-2 px-5`}>{children}</button>   ||    x           */}
-            {/* -------------------------------------------------------------------------------------------------------------------------------------------------               */}
         </div >
     )
 }
