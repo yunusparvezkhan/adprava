@@ -22,6 +22,11 @@ const Button = ({
         'bg-red-500 border-red-600 text-white': danger,
         'rounded-full': rounded,
         'border-3.5 text-black bg-white ': outlined,
+        'text-blue-500': outlined && primary,
+        'text-purple-500': outlined && secondary,
+        'text-green-500': outlined && success,
+        'text-yellow-500': outlined && warning,
+        'text-red-500': outlined && danger,
     })
 
     return (
