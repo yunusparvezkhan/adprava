@@ -13,7 +13,7 @@ function App() {
         <Button> <FaReact /> Plain</Button>
         <Button primary > <FaReact /> Primary</Button>
         <Button secondary ><FaReact /> Secondary</Button>
-        <Button success ><FaReact /> Success</Button>
+        <Button success onClick={() => console.log('Success was clicked')}><FaReact /> Success</Button>
         <Button warning ><FaReact /> Warning</Button>
         <Button danger ><FaReact /> Danger</Button>
 
