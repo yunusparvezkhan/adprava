@@ -13,7 +13,7 @@ const Button = ({
     rounded
 }) => {
     // Used classNames npm package for creating a string for the className of button element.
-    const finalClassName = classNames({
+    const finalClassName = classNames('text-white', 'm-5', 'py-2', 'px-5', {
         'bg-blue-500 border-blue-600': primary,
         'bg-purple-500 border-purple-600': secondary,
         'bg-green-500 border-green-600': success,
@@ -21,10 +21,6 @@ const Button = ({
         'bg-red-500 border-red-600': danger,
         'rounded-full': rounded,
         'border-2': outlined,
-        'text-white': true,
-        'm-5': true,
-        'py-2': true,
-        'px-5': true,
     })
 
     return (
