@@ -28,7 +28,7 @@ const Button = ({
         'text-green-500': outlined && success,
         'text-yellow-500': outlined && warning,
         'text-red-500': outlined && danger,
-    })
+    }, rest.className)
 
     return (
         <div>
