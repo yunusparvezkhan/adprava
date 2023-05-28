@@ -14,6 +14,7 @@ const Button = ({
 }) => {
     // Used classNames npm package for creating a string for the className of button element.
     const finalClassName = classNames('border-2', 'm-5', 'py-2', 'px-5', {
+        'border-black': !primary && !secondary && !success && !warning && !danger,
         'bg-blue-500 border-blue-600 text-white': primary,
         'bg-purple-500 border-purple-600 text-white': secondary,
         'bg-green-500 border-green-600 text-white': success,
