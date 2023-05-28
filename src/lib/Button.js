@@ -43,11 +43,7 @@ Button.propTypes = {
             + Number(!!success)
             + Number(!!warning)
             + Number(!!danger);
-        if (sumnum === 1) {
-            return;
-        } else if (sumnum === 0) {
-            return new Error("Please provide the type of button as a prop on the Button jsx element");
-        } else {
+        if (sumnum > 1) {
             return new Error("Please provide only one button type as a prop on the Button jsx element");
         };
     }
