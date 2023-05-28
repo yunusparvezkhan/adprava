@@ -12,18 +12,22 @@ const Button = ({
     rounded
 }) => {
     const [btntype, setBtntype] = useState('');
+    const [btnroundness, setBtnroundness] = useState('');
+    const [btnoutline, setBtnoutline] = useState('');
     let dummyvar = false;
 
     useEffect(() => {
-        primary === true ? setBtntype('bg-blue-500 text-white m-5 py-2 px-5') : dummyvar = !dummyvar;
-        secondary === true ? setBtntype('bg-purple-700 text-white m-5 py-2 px-5') : dummyvar = !dummyvar;
-        success === true ? setBtntype('bg-green-600 text-white m-5 py-2 px-5') : dummyvar = !dummyvar;
-        warning === true ? setBtntype('bg-yellow-500 text-white m-5 py-2 px-5') : dummyvar = !dummyvar;
-        danger === true ? setBtntype('bg-red-400 text-white m-5 py-2 px-5') : dummyvar = !dummyvar;
+        primary === true ? setBtntype('bg-blue-500 text-white m-5 py-2 px-5 ') : dummyvar = !dummyvar;
+        secondary === true ? setBtntype('bg-purple-700 text-white m-5 py-2 px-5 ') : dummyvar = !dummyvar;
+        success === true ? setBtntype('bg-green-600 text-white m-5 py-2 px-5 ') : dummyvar = !dummyvar;
+        warning === true ? setBtntype('bg-yellow-500 text-white m-5 py-2 px-5 ') : dummyvar = !dummyvar;
+        danger === true ? setBtntype('bg-red-400 text-white m-5 py-2 px-5 ') : dummyvar = !dummyvar;
+        outlined === true ? setBtnoutline('border-2 border-blue-800 text-black m-5 py-2 px-5 ') : dummyvar = !dummyvar;
+        rounded === true ? setBtnroundness('rounded-full ') : dummyvar = !dummyvar;
     }, []);
     return (
         <div>
-            <button className={btntype}>{children}</button>
+            <button className={btntype + btnoutline + btnroundness}>{children}</button>
         </div>
     )
 }
