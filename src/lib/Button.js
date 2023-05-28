@@ -17,19 +17,19 @@ const Button = ({
     let dummyvar = false;
 
     useEffect(() => {
-        primary === true ? setBtncolor('blue-500') : dummyvar = !dummyvar;
-        secondary === true ? setBtncolor('purple-500') : dummyvar = !dummyvar;
-        success === true ? setBtncolor('green-500') : dummyvar = !dummyvar;
-        warning === true ? setBtncolor('yellow-400') : dummyvar = !dummyvar;
-        danger === true ? setBtncolor('red-400') : dummyvar = !dummyvar;
+        primary === true ? setBtncolor('blue') : dummyvar = !dummyvar;
+        secondary === true ? setBtncolor('purple') : dummyvar = !dummyvar;
+        success === true ? setBtncolor('green') : dummyvar = !dummyvar;
+        warning === true ? setBtncolor('yellow') : dummyvar = !dummyvar;
+        danger === true ? setBtncolor('red') : dummyvar = !dummyvar;
 
         outlined === true ? setBtnoutline('border-2') : dummyvar = !dummyvar;
         rounded === true ? setBtnroundness('rounded-full') : dummyvar = !dummyvar;
     }, []);
     return (
         <div>
-            <button className={` ${btnroundness} bg-${btncolor} ${btnoutline} border-${btncolor.slice(0, btncolor.length - 4)}-600 text-white m-5 py-2 px-5`}>{children}</button>
-        </div>
+            <button className={` ${btnroundness} bg-${btncolor}-500 ${btnoutline} border-${btncolor}-600 text-white m-5 py-2 px-5`}>{children}</button>
+        </div >
     )
 }
 
