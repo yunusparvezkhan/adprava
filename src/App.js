@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./lib/Button";
 // Icons  ---->
 import { CiBeaker1 } from "react-icons/ci";
+import { GoBug, GoCheck } from "react-icons/go";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <label>Normal</label>
         <Button> <CiBeaker1 /> Plain</Button>
         <Button primary >Primary</Button>
-        <Button secondary >Secondary</Button>
+        <Button secondary > Secondary</Button>
         <Button success >Success</Button>
         <Button warning >Warning</Button>
         <Button danger >Danger</Button>
