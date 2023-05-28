@@ -12,8 +12,8 @@ function App() {
 
         <label>Normal</label>
         <Button> <CiBeaker1 /> Plain</Button>
-        <Button primary >Primary</Button>
-        <Button secondary > Secondary</Button>
+        <Button primary > <GoBug /> Primary</Button>
+        <Button secondary ><GoCheck /> Secondary</Button>
         <Button success >Success</Button>
         <Button warning >Warning</Button>
         <Button danger >Danger</Button>
