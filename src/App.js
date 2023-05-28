@@ -1,8 +1,6 @@
 import React from "react";
 import Button from "./lib/Button";
 // Icons  ---->
-import { CiBeaker1 } from "react-icons/ci";
-import { GoBug, GoCheck } from "react-icons/go";
 import { FaReact } from "react-icons/fa";
 
 function App() {
