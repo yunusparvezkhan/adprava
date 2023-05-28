@@ -3,6 +3,7 @@ import Button from "./lib/Button";
 // Icons  ---->
 import { CiBeaker1 } from "react-icons/ci";
 import { GoBug, GoCheck } from "react-icons/go";
+import { FaReact } from "react-icons/fa";
 
 function App() {
   return (
@@ -11,36 +12,36 @@ function App() {
       <div>
 
         <label>Normal</label>
-        <Button> <CiBeaker1 /> Plain</Button>
-        <Button primary > <GoBug /> Primary</Button>
-        <Button secondary ><GoCheck /> Secondary</Button>
-        <Button success >Success</Button>
-        <Button warning >Warning</Button>
-        <Button danger >Danger</Button>
+        <Button> <FaReact /> Plain</Button>
+        <Button primary > <FaReact /> Primary</Button>
+        <Button secondary ><FaReact /> Secondary</Button>
+        <Button success ><FaReact /> Success</Button>
+        <Button warning ><FaReact /> Warning</Button>
+        <Button danger ><FaReact /> Danger</Button>
 
         <label>Rounded</label>
-        <Button rounded >Plain</Button>
-        <Button primary rounded >Primary</Button>
-        <Button secondary rounded>Secondary</Button>
-        <Button success rounded>Success</Button>
-        <Button warning rounded>Warning</Button>
-        <Button danger rounded>Danger</Button>
+        <Button rounded ><FaReact /> Plain</Button>
+        <Button primary rounded ><FaReact /> Primary</Button>
+        <Button secondary rounded><FaReact /> Secondary</Button>
+        <Button success rounded><FaReact /> Success</Button>
+        <Button warning rounded><FaReact /> Warning</Button>
+        <Button danger rounded><FaReact /> Danger</Button>
 
         <label>Outlined Rounded</label>
-        <Button rounded >Plain</Button>
-        <Button primary outlined rounded >Primary</Button>
-        <Button secondary outlined rounded>Secondary</Button>
-        <Button success outlined rounded>Success</Button>
-        <Button warning outlined rounded>Warning</Button>
-        <Button danger outlined rounded>Danger</Button>
+        <Button rounded ><FaReact /> Plain</Button>
+        <Button primary outlined rounded ><FaReact /> Primary</Button>
+        <Button secondary outlined rounded><FaReact /> Secondary</Button>
+        <Button success outlined rounded><FaReact /> Success</Button>
+        <Button warning outlined rounded><FaReact /> Warning</Button>
+        <Button danger outlined rounded><FaReact /> Danger</Button>
 
         <label>Outlined</label>
-        <Button outlined>Plain</Button>
-        <Button primary outlined>Primary</Button>
-        <Button secondary outlined>Secondary</Button>
-        <Button success outlined>Success</Button>
-        <Button warning outlined>Warning</Button>
-        <Button danger outlined>Danger</Button>
+        <Button outlined><FaReact /> Plain</Button>
+        <Button primary outlined><FaReact /> Primary</Button>
+        <Button secondary outlined><FaReact /> Secondary</Button>
+        <Button success outlined><FaReact /> Success</Button>
+        <Button warning outlined><FaReact /> Warning</Button>
+        <Button danger outlined><FaReact /> Danger</Button>
       </div>
     </div >
   );
