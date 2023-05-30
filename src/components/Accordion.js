@@ -26,9 +26,23 @@ const Accordion = () => {
 
     ]
 
+    const renderData = () => {
+        return qnadata.map(({ q, a }) => {
+            return (
+                <div>
+                    <h3>{q}</h3>
+                    <p>{a}</p>
+                </div>
+            )
+        })
+    }
+
     return (
         <div>
             <h1 className='text-2xl text-center mt-5' >Accordion</h1>
+            <div>
+                {renderData()}
+            </div>
         </div>
     )
 }
