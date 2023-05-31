@@ -2,7 +2,7 @@ import React from 'react'
 import { MdQuestionAnswer } from 'react-icons/md';
 import { HiQuestionMarkCircle } from 'react-icons/hi';
 
-const AccordionItems = ({ q, a }) => {
+const AccordionItem = ({ q, a }) => {
     return (
         <div className='ml-20 mt-7'>
             <div className='flex items-center'>
@@ -17,4 +17,4 @@ const AccordionItems = ({ q, a }) => {
     )
 }
 
-export default AccordionItems
+export default AccordionItem;

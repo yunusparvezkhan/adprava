@@ -1,12 +1,12 @@
 import React from 'react';
-import AccordionItems from './AccordionItems';
+import AccordionItem from './AccordionItem';
 
 const Accordion = ({ qnadata }) => {
     const renderData = () => {
         return qnadata.map(({ q, a }) => {
             return (
                 <div>
-                    <AccordionItems q={q} a={a} />
+                    <AccordionItem q={q} a={a} />
                 </div>
             )
         })
