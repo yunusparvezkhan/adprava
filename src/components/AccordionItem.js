@@ -2,19 +2,19 @@ import React, { useState } from 'react'
 import { MdQuestionAnswer, MdExpandMore, MdExpandLess } from 'react-icons/md';
 import { HiQuestionMarkCircle } from 'react-icons/hi';
 
-const AccordionItem = ({ q, a }) => {
+const AccordionItem = ({ activateItem, activeitem, id, q, a }) => {
     const [AccordionSts, setAccordionSts] = useState(false);
     const [DownIcon, setDownIcon] = useState('');
     const [UpIcon, setUpIcon] = useState('hidden');
     const handleExpandIconClick = () => {
-        if (AccordionSts === false) {
+        if (activeitem === id) {
             setDownIcon('hidden');
             setUpIcon('');
-            setAccordionSts(true);
-        } else if (AccordionSts === true) {
+            activateItem(null);
+        } else {
             setDownIcon('');
             setUpIcon('hidden');
-            setAccordionSts(false);
+            activateItem(id);
         }
     }
     return (

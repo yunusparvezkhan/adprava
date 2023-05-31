@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AccordionItem from './AccordionItem';
 
 const Accordion = ({ qnadata }) => {
+    const [activeitem, setActiveitem] = useState(null);
     const renderData = () => {
-        return qnadata.map(({ q, a }) => {
+        const handleItemActivation = (id) => {
+            activeitem !== id ? setActiveitem(id) : setActiveitem(null)
+        }
+        return qnadata.map(({ id, q, a }) => {
             return (
-                <div>
-                    <AccordionItem q={q} a={a} />
+                <div key={id}>
+                    <AccordionItem activateItem={handleItemActivation} activeitem={activeitem} id={id} q={q} a={a} />
                 </div>
             )
         })
