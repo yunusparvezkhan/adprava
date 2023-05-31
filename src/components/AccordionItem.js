@@ -13,23 +13,21 @@ const AccordionItem = ({ q, a }) => {
             setAccordionSts(true);
         } else if (AccordionSts === true) {
             setDownIcon('');
-            setUpIcon('hidden')
+            setUpIcon('hidden');
             setAccordionSts(false);
         }
     }
     return (
-        <div className='ml-20 mt-7'>
+        <div className='ml-20 mt-7 cursor-pointer' onClick={handleExpandIconClick}>
             <div className='flex items-center'>
                 <HiQuestionMarkCircle className='mr-2' />
-                <h3 className='text-xl font-medium'>{q}</h3>
-                <button onClick={handleExpandIconClick} >
-                    <MdExpandMore className={'ml-2 text-2xl ' + DownIcon} />
-                    <MdExpandLess className={'ml-2 text-2xl ' + UpIcon} />
-                </button>
+                <h3 style={{ userSelect: 'none' }} className='text-xl font-medium'>{q}</h3>
+                <MdExpandMore className={'ml-2 text-2xl ' + DownIcon} />
+                <MdExpandLess className={'ml-2 text-2xl ' + UpIcon} />
             </div>
-            <div className='flex items-center'>
+            <div className={'flex items-center ' + UpIcon}>
                 <MdQuestionAnswer className='mr-2' />
-                <p className='text'>{a}</p>
+                <p className={'text'}>{a}</p>
             </div>
         </div>
     )
