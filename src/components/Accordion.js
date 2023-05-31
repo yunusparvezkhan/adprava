@@ -1,20 +1,12 @@
 import React from 'react';
-import { HiQuestionMarkCircle } from 'react-icons/hi';
-import { MdQuestionAnswer } from 'react-icons/md';
+import AccordionItems from './AccordionItems';
 
 const Accordion = ({ qnadata }) => {
     const renderData = () => {
         return qnadata.map(({ q, a }) => {
             return (
-                <div className='ml-20 mt-7'>
-                    <div className='flex items-center'>
-                        <HiQuestionMarkCircle className='mr-2' />
-                        <h3 className='text-xl font-medium'>{q}</h3>
-                    </div>
-                    <div className='flex items-center'>
-                        <MdQuestionAnswer className='mr-2' />
-                        <p className='text'>{a}</p>
-                    </div>
+                <div>
+                    <AccordionItems q={q} a={a} />
                 </div>
             )
         })
