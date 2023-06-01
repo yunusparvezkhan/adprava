@@ -26,8 +26,8 @@ const Accordion = ({ qnadata }) => {
         }
 
         return (
-            <React.Fragment>
-                <div className='ml-20 mt-7 cursor-pointer' key={id} onClick={() => { handleExpandIconClick(); handleItemActivation(id) }}>
+            <React.Fragment key={id}>
+                <div className='ml-20 mt-7 cursor-pointer' onClick={() => { handleExpandIconClick(); handleItemActivation(id) }}>
                     <div className='flex items-center'>
                         <HiQuestionMarkCircle className='mr-2' />
                         <h3 style={{ userSelect: 'none' }} className='text-xl font-medium'>{q}</h3>
