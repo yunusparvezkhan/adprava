@@ -1,15 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import AccordionItem from './AccordionItem';
+import React, { useState } from 'react';
 import { MdQuestionAnswer, MdExpandMore, MdExpandLess } from 'react-icons/md';
 import { HiQuestionMarkCircle } from 'react-icons/hi';
 
 const Accordion = ({ qnadata }) => {
     const [activeitem, setActiveitem] = useState('');
-
-    const handleItemActivation = (id) => {
-        activeitem !== id ? setActiveitem(id) : setActiveitem(null)
-    }
-
 
     const renderData = qnadata.map(({ id, q, a }) => {
         let DownIcon = activeitem === id ? 'hidden' : '';
@@ -18,16 +12,18 @@ const Accordion = ({ qnadata }) => {
         const handleExpandIconClick = () => {
             if (activeitem === id) {
                 DownIcon = '';
-                UpIcon = 'hidden'
+                UpIcon = 'hidden';
+                setActiveitem(null);
             } else {
                 DownIcon = 'hidden';
-                UpIcon = ''
+                UpIcon = '';
+                setActiveitem(id);
             }
         }
 
         return (
             <React.Fragment key={id}>
-                <div className='ml-20 mt-7 cursor-pointer' onClick={() => { handleExpandIconClick(); handleItemActivation(id) }}>
+                <div className='ml-20 mt-7 cursor-pointer' onClick={() => { handleExpandIconClick() }}>
                     <div className='flex items-center'>
                         <HiQuestionMarkCircle className='mr-2' />
                         <h3 style={{ userSelect: 'none' }} className='text-xl font-medium'>{q}</h3>
@@ -38,7 +34,6 @@ const Accordion = ({ qnadata }) => {
                         <MdQuestionAnswer className='mr-2' />
                         <p className={'text'}>{a}</p>
                     </div>
-                    {/* {renderItem()} */}
                 </div>
             </React.Fragment >
         )
@@ -51,7 +46,6 @@ const Accordion = ({ qnadata }) => {
             <h1 className='text-3xl mt-5 ml-20 font-black text-violet-700' >Accordion</h1>
             <div>
                 {renderData}
-                <h1>{activeitem}</h1>
             </div>
         </div>
     )
