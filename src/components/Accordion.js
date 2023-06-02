@@ -11,12 +11,8 @@ const Accordion = ({ qnadata }) => {
 
         const handleExpandIconClick = () => {
             if (activeitem === id) {
-                DownIcon = '';
-                UpIcon = 'hidden';
                 setActiveitem(null);
             } else {
-                DownIcon = 'hidden';
-                UpIcon = '';
                 setActiveitem(id);
             }
         }
