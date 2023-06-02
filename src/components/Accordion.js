@@ -18,11 +18,6 @@ const Accordion = ({ qnadata }) => {
                 }
             })
 
-            // if (activeitem === id) {
-            //     setActiveitem(null);
-            // } else {
-            //     setActiveitem(id);
-            // }
         }
 
         return (
