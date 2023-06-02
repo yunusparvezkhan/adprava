@@ -10,11 +10,19 @@ const Accordion = ({ qnadata }) => {
         let UpIcon = activeitem === id ? '' : 'hidden';
 
         const handleExpandIconClick = () => {
-            if (activeitem === id) {
-                setActiveitem(null);
-            } else {
-                setActiveitem(id);
-            }
+            setActiveitem((current) => {
+                if (current === id) {
+                    return null;
+                } else {
+                    return id;
+                }
+            })
+
+            // if (activeitem === id) {
+            //     setActiveitem(null);
+            // } else {
+            //     setActiveitem(id);
+            // }
         }
 
         return (
