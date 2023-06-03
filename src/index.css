@@ -5,3 +5,7 @@
 button>svg {
     margin-right: 5px;
 }
+
+.App {
+    min-height: 100vh;
+}

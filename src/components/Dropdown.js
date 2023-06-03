@@ -1,10 +1,28 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { MdExpandMore, MdExpandLess, MdOutlineCheckBoxOutlineBlank, MdOutlineCheckBox } from 'react-icons/md';
-import { HiQuestionMarkCircle } from 'react-icons/hi';
 
 const Dropdown = ({ DropDownOptions }) => {
     const [selectedOption, setSelectedOption] = useState(null);
     const [menuhider, setMenuhider] = useState(true);
+
+    const formref = useRef();
+
+    useEffect(() => {
+
+        const onBodyClick = (e) => {
+            if (formref.current.contains(e.target)) {
+                return;
+            } else {
+                setMenuhider(true);
+            }
+        }
+
+        document.body.addEventListener('click', onBodyClick)
+
+        return () => {
+            document.body.removeEventListener('click', onBodyClick)
+        }
+    }, [])
 
     const renderMenu = DropDownOptions.map((option) => {
         return (
@@ -16,7 +34,7 @@ const Dropdown = ({ DropDownOptions }) => {
         )
     })
     return (
-        <div className='ml-20 mt-10 w-1/3 bg-gray-100 '>
+        <div ref={formref} className='ml-20 mt-10 w-1/3 bg-gray-100 '>
             <div>
                 <div className='text-xl font-semibold cursor-pointer flex items-center' onClick={() => setMenuhider(!menuhider)} >
                     <div className='flex-1 py-2'>
