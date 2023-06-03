@@ -34,20 +34,12 @@ function App() {
 
   ]
 
-  const handleBodyClick = async () => {
-    setBodyclick(true);
-    console.log(bodyclick)
-  }
-  const handleDropDownClose = () => {
-    setBodyclick(false);
-  }
-
   return (
-    <div className="App" onClick={() => handleBodyClick()}>
+    <div className="App">
       <h1 className="text-5xl font-semibold text-gray-100 py-5 bg-gray-800 pl-20">Adprava</h1>
       {/* <ButtonPage /> */}
       {/* <Accordion qnadata={qnadata} /> */}
-      <Dropdown DropDownOptions={qnadata} bodyclick={bodyclick} dropDownCloseConformation={handleDropDownClose} />
+      <Dropdown DropDownOptions={qnadata} />
     </div >
   );
 }

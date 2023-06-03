@@ -1,19 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { MdExpandMore, MdExpandLess, MdOutlineCheckBoxOutlineBlank, MdOutlineCheckBox } from 'react-icons/md';
 import { HiQuestionMarkCircle } from 'react-icons/hi';
 
-const Dropdown = ({ DropDownOptions, bodyclick, dropDownCloseConformation }) => {
+const Dropdown = ({ DropDownOptions }) => {
     const [selectedOption, setSelectedOption] = useState(null);
     const [menuhider, setMenuhider] = useState(true);
-    const [dropdownbodyclick, setDropdownbodyclick] = useState(false);
-
-    console.log(bodyclick)
-    useEffect(() => {
-        if (bodyclick === true && dropdownbodyclick === false) {
-            setMenuhider(true);
-            dropDownCloseConformation(false);
-        }
-    }, [])
 
     const renderMenu = DropDownOptions.map((option) => {
         return (
@@ -25,7 +16,7 @@ const Dropdown = ({ DropDownOptions, bodyclick, dropDownCloseConformation }) => 
         )
     })
     return (
-        <div className='ml-20 mt-10 w-1/3 bg-gray-100 ' onClick={() => setDropdownbodyclick(true)}>
+        <div className='ml-20 mt-10 w-1/3 bg-gray-100 '>
             <div>
                 <div className='text-3xl font-bold cursor-pointer flex items-center' onClick={() => setMenuhider(!menuhider)} >
                     <div className='flex-1 py-2'>
