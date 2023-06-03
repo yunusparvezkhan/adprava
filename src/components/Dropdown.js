@@ -8,7 +8,7 @@ const Dropdown = ({ DropDownOptions }) => {
 
     const renderMenu = DropDownOptions.map((option) => {
         return (
-            <div onClick={() => { setSelectedOption(option); setMenuhider(true) }} className='py-2 block flex items-center' >
+            <div key={option.id} onClick={() => { setSelectedOption(option); setMenuhider(true) }} className='py-2 block flex items-center' >
                 <MdOutlineCheckBoxOutlineBlank className={selectedOption === option ? 'hidden' : 'mr-2'} />
                 <MdOutlineCheckBox className={selectedOption === option ? 'mr-2' : 'hidden'} />
                 <label className='text-base cursor-pointer' >{option.q}</label>
