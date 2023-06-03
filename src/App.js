@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import ButtonPage from "./pages/ButtonPage";
 import Accordion from "./components/Accordion";
 import Dropdown from "./components/Dropdown";
 
 function App() {
+  const [bodyclick, setBodyclick] = useState(false);
   const qnadata = [
     {
       id: 1,
@@ -32,12 +33,21 @@ function App() {
     },
 
   ]
+
+  const handleBodyClick = async () => {
+    setBodyclick(true);
+    console.log(bodyclick)
+  }
+  const handleDropDownClose = () => {
+    setBodyclick(false);
+  }
+
   return (
-    <div className="App">
+    <div className="App" onClick={() => handleBodyClick()}>
       <h1 className="text-5xl font-semibold text-gray-100 py-5 bg-gray-800 pl-20">Adprava</h1>
       {/* <ButtonPage /> */}
       {/* <Accordion qnadata={qnadata} /> */}
-      <Dropdown DropDownOptions={qnadata} />
+      <Dropdown DropDownOptions={qnadata} bodyclick={bodyclick} dropDownCloseConformation={handleDropDownClose} />
     </div >
   );
 }
