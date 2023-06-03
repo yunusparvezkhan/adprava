@@ -34,9 +34,9 @@ const Dropdown = ({ DropDownOptions }) => {
         )
     })
     return (
-        <div ref={formref} className='ml-20 mt-10 w-1/3 bg-gray-100 '>
-            <div>
-                <div className='text-xl font-semibold cursor-pointer flex items-center' onClick={() => setMenuhider(!menuhider)} >
+        <div ref={formref}>
+            <div className='ml-20 mt-10 w-1/3 bg-gray-100 ' >
+                <div className='text-base font-semibold cursor-pointer flex items-center' onClick={() => setMenuhider(!menuhider)} >
                     <div className='flex-1 py-2'>
                         {selectedOption ? selectedOption.q : 'Select'}
                     </div>
@@ -46,6 +46,10 @@ const Dropdown = ({ DropDownOptions }) => {
                 <div className={menuhider === false ? '' : 'hidden'}>
                     {renderMenu}
                 </div>
+            </div>
+            <div className='block mt-20 ml-20 text-lg' >
+                <label className={`font-bold ${selectedOption ? '' : 'hidden'}`} >Answer :-</label>
+                {selectedOption ? ' ' + selectedOption.a : ''}
             </div>
         </div>
     )
