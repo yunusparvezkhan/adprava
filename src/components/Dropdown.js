@@ -18,7 +18,7 @@ const Dropdown = ({ DropDownOptions }) => {
     return (
         <div className='ml-20 mt-10 w-1/3 bg-gray-100 '>
             <div>
-                <div className='text-3xl font-bold cursor-pointer flex items-center' onClick={() => setMenuhider(!menuhider)} >
+                <div className='text-xl font-semibold cursor-pointer flex items-center' onClick={() => setMenuhider(!menuhider)} >
                     <div className='flex-1 py-2'>
                         {selectedOption ? selectedOption.q : 'Select'}
                     </div>
