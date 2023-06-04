@@ -1,10 +1,12 @@
 import React from 'react';
 import Dropdown from '../components/Dropdown';
 
-const DropdownPage = ({ DropDownOptions }) => {
+import { qnadata } from '../data/qnadata';
+
+const DropdownPage = () => {
     return (
         <div>
-            <Dropdown DropDownOptions={DropDownOptions} />
+            <Dropdown DropDownOptions={qnadata} />
         </div>
     )
 }
