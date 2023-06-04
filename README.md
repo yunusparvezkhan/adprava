@@ -9,9 +9,7 @@ The name is made with mixing two sanskrit words, "Adya" and "Prava" respectively
     * useState()
     * useEffect()
     * useRef()
-    <br>
-    <br>    
-
+  
 1. Props system
 1. Code structuring
 1. Tailwind CSS Styling library
