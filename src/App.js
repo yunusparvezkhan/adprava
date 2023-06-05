@@ -4,7 +4,6 @@ import AccordionPage from "./pages/AccordionPage";
 import DropdownPage from "./pages/DropdownPage";
 import NavBar from "./components/NavBar";
 
-
 function App() {
   const [currentPage, setCurrentPage] = useState('./Accordion')
   const onCurrentPageChange = (value) => {
