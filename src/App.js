@@ -5,10 +5,12 @@ import DropdownPage from "./pages/DropdownPage";
 import NavBar from "./components/NavBar";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('./Accordion')
+  const [currentPage, setCurrentPage] = useState(window.location.pathname)
   const onCurrentPageChange = (value) => {
     setCurrentPage(value);
   }
+
+  console.log('app')
 
   const renderPage = () => {
     if (window.location.pathname === '/Button') {
