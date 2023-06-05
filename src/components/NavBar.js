@@ -2,7 +2,6 @@ import React from 'react';
 import adpravaLogo from '../media/icons/gold-medal.png';
 import Button from './Button';
 import '../styles/stylelib.css';
-import Link from './Link';
 
 
 const NavBar = ({ onChange }) => {
@@ -20,10 +19,6 @@ const NavBar = ({ onChange }) => {
                     <Button secondary onClick={() => onBtnClick('/Button')}>Button</Button>
                     <Button secondary onClick={() => onBtnClick('/Dropdown')}>Dropdown</Button>
                 </div>
-
-                {/* <div className='navbar-button-cont flex '>
-                    <Link to="/Accordion" name="Accordion" ></Link>
-                </div> */}
             </div>
         </div >
     )
