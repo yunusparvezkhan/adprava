@@ -102,3 +102,8 @@ Date:   Sat Jun 3 16:41:28 2023 +0530 <br>
 
 * v1 Delta 2.6 || Tried to implement body click handler to close the dropdown menu || STS : neg 
 * --> v1 Delta 3.6 || Tried to implement body click handler to close the dropdown menu || STS : neg
+
+
+
+
+Just trying a new extension. Ignore
