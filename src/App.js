@@ -12,21 +12,10 @@ function App() {
   const { currentPath } = useContext(NavigationContext);                                           //
   //----------------------------------------------------------------------------------------------//
 
-  const renderPage = () => {
-    if (window.location.pathname === '/Button') {
-      return <div><ButtonPage /></div>
-    } else if (window.location.pathname === '/Accordion' || window.location.pathname === '/') {
-      return <AccordionPage />
-    } else if (window.location.pathname === '/Dropdown') {
-      return <DropdownPage />
-    }
-  }
-
   return (
     <div className="App">
       <NavBar />
       <div>
-        {/* {renderPage()} */}
 
         <Route path='/Accordion'>
           <AccordionPage />
