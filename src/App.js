@@ -5,10 +5,6 @@ import DropdownPage from "./pages/DropdownPage";
 import NavBar from "./components/NavBar";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(window.location.pathname)
-  const onCurrentPageChange = (value) => {
-    setCurrentPage(value);
-  }
 
   const renderPage = () => {
     if (window.location.pathname === '/Button') {
@@ -22,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar onChange={onCurrentPageChange} />
+      <NavBar />
       <div>
         {renderPage()}
       </div>

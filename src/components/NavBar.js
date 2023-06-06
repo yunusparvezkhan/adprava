@@ -5,11 +5,10 @@ import NavigationContext from '../context/navigation';
 import '../styles/stylelib.css';
 
 
-const NavBar = ({ onChange }) => {
+const NavBar = () => {
     const { navigate } = useContext(NavigationContext)
     const onBtnClick = (path) => {
         navigate(path);
-        onChange(path);
     }
     return (
         <div>
