@@ -10,8 +10,6 @@ function App() {
     setCurrentPage(value);
   }
 
-  console.log('app')
-
   const renderPage = () => {
     if (window.location.pathname === '/Button') {
       return <div><ButtonPage /></div>
