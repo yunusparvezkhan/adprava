@@ -7,6 +7,7 @@ import '../styles/stylelib.css';
 
 const NavBar = () => {
     const { navigate } = useContext(NavigationContext)
+
     const onBtnClick = (path) => {
         navigate(path);
     }
