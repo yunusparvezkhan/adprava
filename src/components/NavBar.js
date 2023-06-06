@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import adpravaLogo from '../media/icons/gold-medal.png';
 import Button from './Button';
+import NavigationContext from '../context/navigation';
 import '../styles/stylelib.css';
 
 
 const NavBar = ({ onChange }) => {
+    const { navigate } = useContext(NavigationContext)
     const onBtnClick = (path) => {
-        window.history.pushState({}, '', path);
+        navigate(path);
         onChange(path);
     }
     return (
