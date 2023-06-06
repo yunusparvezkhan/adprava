@@ -4,6 +4,7 @@ import AccordionPage from "./pages/AccordionPage";
 import DropdownPage from "./pages/DropdownPage";
 import NavBar from "./components/NavBar";
 import NavigationContext from "./context/navigation";
+import Route from "./components/Route";
 
 function App() {
 
@@ -25,7 +26,20 @@ function App() {
     <div className="App">
       <NavBar />
       <div>
-        {renderPage()}
+        {/* {renderPage()} */}
+
+        <Route path='/Accordion'>
+          <AccordionPage />
+        </Route>
+
+        <Route path='/Button'>
+          <ButtonPage />
+        </Route>
+
+        <Route path='/Dropdown'>
+          <DropdownPage />
+        </Route>
+
       </div>
     </div >
   );
