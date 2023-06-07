@@ -6,7 +6,7 @@ const Link = ({ to, children }) => {
 
     const handleClick = (event) => {
         console.log(event)
-        if (event.ctrlKey) {
+        if (event.ctrlKey || event.metaKey) {
             return;
         }
         event.preventDefault();
