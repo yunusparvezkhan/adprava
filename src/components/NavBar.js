@@ -17,7 +17,7 @@ const NavBar = () => {
                 <img src={adpravaLogo} className='pl-20' />
                 <h1 className='text-5xl font-semibold text-gray-100 py-5 pl-2' >Adprava</h1>
                 <div className='navbar-button-cont flex ' >
-                    <Button secondary onClick={() => onBtnClick('/Accordion')} >Accordion</Button>
+                    <Button secondary href='/Accordion' onClick={() => onBtnClick('/Accordion')} >Accordion</Button>
                     <Button secondary onClick={() => onBtnClick('/Button')}>Button</Button>
                     <Button secondary onClick={() => onBtnClick('/Dropdown')}>Dropdown</Button>
                 </div>
