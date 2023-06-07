@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
-import NavigationContext from '../context/navigation';
+import React from 'react'
+import useNavigation from '../hooks/navigationHook';
 
 const Link = ({ to, children }) => {
-    const { navigate } = useContext(NavigationContext);
+    const { navigate } = useNavigation;
 
     const handleClick = (event) => {
         if (event.ctrlKey || event.metaKey) {
