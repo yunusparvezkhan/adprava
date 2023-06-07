@@ -5,13 +5,17 @@ const Link = ({ to, children }) => {
     const { navigate } = useContext(NavigationContext);
 
     const handleClick = (event) => {
+        console.log(event)
+        if (event.ctrlKey) {
+            return;
+        }
         event.preventDefault();
         navigate(to);
     }
 
     return (
         <div className='mx-1 px-3 py-2 hover:bg-blue-900 transition duraiton-100 cursor-pointer ' >
-            <a onClick={handleClick} >{children}</a>
+            <a href={to} onClick={handleClick} >{children}</a>
         </div>
     )
 }
