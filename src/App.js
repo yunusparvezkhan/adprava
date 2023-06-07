@@ -11,6 +11,10 @@ function App() {
       <NavBar />
       <div>
 
+        <Route path='/'>
+          <AccordionPage />
+        </Route>
+
         <Route path='/Accordion'>
           <AccordionPage />
         </Route>
