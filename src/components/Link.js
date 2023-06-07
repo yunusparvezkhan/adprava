@@ -10,7 +10,7 @@ const Link = ({ to, children }) => {
     }
 
     return (
-        <div className='mx-5' >
+        <div className='mx-1 px-3 py-2 hover:bg-blue-900 transition duraiton-100 cursor-pointer ' >
             <a onClick={handleClick} >{children}</a>
         </div>
     )
