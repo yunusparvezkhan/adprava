@@ -5,7 +5,6 @@ const Link = ({ to, children }) => {
     const { navigate } = useContext(NavigationContext);
 
     const handleClick = (event) => {
-        console.log(event)
         if (event.ctrlKey || event.metaKey) {
             return;
         }
