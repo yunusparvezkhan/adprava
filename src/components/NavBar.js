@@ -1,9 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import adpravaLogo from '../media/icons/gold-medal.png';
 import Link from './Link';
 import '../styles/stylelib.css';
-
-
 
 const NavBar = () => {
     return (
