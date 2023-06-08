@@ -1,11 +1,11 @@
 
 
 <!-- ![Adprava Logo](./src//media/logos/AA-in-hindi-trans.png)   -->
-<div align="center"><img  src="./src/media/logos/blue-AA-in-hindi-trans.png" style="position:absolute;left:50%" width="300" ></div>
+<div align="center"><img  src="./src/media/logos/blue-AA-in-hindi-trans.png" width="300" ></div>
 
-<h1 align="center" style="font-size:70px; font-weight:50; letter-spacing:10px" >A&nbsp d&nbsp p&nbsp r&nbsp a&nbsp v&nbsp a</h1>
+<h1 align="center" >A&nbsp d&nbsp p&nbsp r&nbsp a&nbsp v&nbsp a</h1>
 
-<h3 align="center" style="font-size:32px; font-weight:100; letter-spacing:2px"> A beginner's ReactJS project containing 6 pages and navigation. </h3>
+<h3 align="center" > A beginner's ReactJS project containing 6 pages and navigation. </h3>
 
 
 ## Introduction
