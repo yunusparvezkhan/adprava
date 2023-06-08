@@ -1,12 +1,12 @@
-<center>
+
 
 <!-- ![Adprava Logo](./src//media/logos/AA-in-hindi-trans.png)   -->
-<img src="./src/media/logos/blue-AA-in-hindi-trans.png" width="300" >
+<div align="center"><img  src="./src/media/logos/blue-AA-in-hindi-trans.png" style="position:absolute;left:50%" width="300" ></div>
 
-<h1 style="font-size:70px; font-weight:50; letter-spacing:10px" >Adprava</h1>
+<h1 align="center" style="font-size:70px; font-weight:50; letter-spacing:10px" >A&nbsp d&nbsp p&nbsp r&nbsp a&nbsp v&nbsp a</h1>
 
-<label style="font-size:32px; font-weight:100; letter-spacing:2px"> A beginner's ReactJS project containing 6 pages and navigation. </label>
-</center>
+<h3 align="center" style="font-size:32px; font-weight:100; letter-spacing:2px"> A beginner's ReactJS project containing 6 pages and navigation. </h3>
+
 
 ## Introduction
 **Adprava** is a practice project that deals with some concepts of ReactJS and NodeJS. This project is built solely with the purpose of learning Web Development, and is being shared with other developers in github for reviews, practice, help to begginers etc reasons.
