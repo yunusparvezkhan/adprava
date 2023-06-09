@@ -107,5 +107,5 @@ Date:   Sat Jun 3 16:41:28 2023 +0530 <br>
 
 
 # Version 1 Narkel 🥥
-The Version 1 `Narkel` contains 
+The Version 1 `Narkel` contains Three Pages, namely Dropdown, Accordion and Button. Descriptions are given about these pages in the README.md in the root directory.
 
