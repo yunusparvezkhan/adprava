@@ -135,7 +135,7 @@ Data loading of `AccordionPage` and `Accordion` component is exactly the same wi
 
 # Developer's Instructions
 ### Commit conventions
-This project uses the `Delta Commits Convention`. This convention is under development, and this repository is one of pioneer projects to use this convention. A detailed documentation about this convention would be live on [YPK Org](https://github.com/ypkorg/Delta-Commits-Convention).
+This project uses the `Delta Commits Convention`. This convention is under development, and this repository is one of the pioneer projects to use this convention. A detailed documentation about this convention would be live on [YPK Org](https://github.com/ypkorg/Delta-Commits-Convention).
 
 ### How to report issue
 
@@ -145,4 +145,4 @@ This project uses the `Delta Commits Convention`. This convention is under devel
 * Mention coding terminologies inside \`  \` backticks.
 
 ### How to Contribute
-If you have fixed any problem in this project or created some new features to make this project more beutiful, make sure to create a issue first describing the need for your changes, then wait for the authors to make a new branch for your code, then create pull request to that branch. Pull requests to `master` branch will be mostly ignored.
+If you have fixed any problem in this project or created some new features to make this project more beutiful, make sure to create a issue, describing the need for your changes, then wait for the author(s) to make a new branch for your changes, then create pull request to that branch. Pull requests to `master` branch will be mostly ignored.
