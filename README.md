@@ -53,4 +53,19 @@ The Dropdown page is simply a Dropdown element rendered in screen. When ever use
 The App invokes a page named `DropdownPage` in it's `return()` function. The `DropdownPage` contains one heading and the `Dropdown` component. The `Dropdown` component is provided with one prop named `DropDownOptions`, and the data for that prop is imported from `./src/data/qnadata.js`. The the `Dropdown` component maps over the data and returns some jsx.
 
 
+## Accordion Page
+### Diagram
+#### Close
+![Accordion](./src/media/diagrams/accordion-mock.png)
+#### Open
+![Accordion](./src/media/diagrams/accordion-open-mock.png)
+
+### About
+The `AccordionPage` is a basic list of questions, and if clicked, some extended text appears below the clicked question. Only one of these ***Accordions*** can be extented at a time.
+
+### Data Loading
+Data loading of `AccordionPage` and `Accordion` component is exactly the same with the `DropdownPage` and `Dropdown` component. The same data is used in a the logics of `Dropdown` component.
+
+
+
 
