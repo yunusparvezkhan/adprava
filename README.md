@@ -67,5 +67,65 @@ The `AccordionPage` is a basic list of questions, and if clicked, some extended 
 Data loading of `AccordionPage` and `Accordion` component is exactly the same with the `DropdownPage` and `Dropdown` component. The same data is used in a the logics of `Dropdown` component.
 
 
+---
 
 
+# User Instructions
+## Installation Guide
+### Windows
+
+#### Prerequisits
+1. nodejs
+1. npm
+1. create-react-app
+1. git
+1. terminal
+1. chocolaty
+1. any text editor
+
+#### **Once you have all the preerequisits installed, you can move forward to clone the repository.**
+
+1. Open powershell
+
+1. Go to your desired directory where you want to clone this repository
+
+1. Type the following in your powershell
+    
+    ```bash
+
+    git clone git@github.com:yunusparvezkhan/adprava.git
+
+    ```
+ 
+ 1. Now if cloning is successful, you have one directory named `adprava` in the directory you cloned the repository. To open this local repository type,
+    ```bash
+
+    cd adprava
+
+    ```
+    And hit enter.
+
+1. Now you need to install all the dependencies of this project. To do so, type the following command and hit enter,
+    ```bash
+
+    npm install
+
+    ```
+
+1. Now to start the app in your browser type,
+    ```bash
+
+    npm run start
+
+    ```
+    And hit enter.
+
+1. Now if you don't see a browser tab opening automatic, open up a browser and type 
+    ```url
+    localhost:3000
+    ```
+    in the url bar and hit enter. 
+
+    >**Note**
+    >
+    > In this last step the url sometimes might not be `localhost:3000`, it can be `localhost:3001` or `localhost:3002` and so on, depending upon if any other server is running on your machine on the `3000` port. So to avoid any problems, try to see what your terminal is telling you after running the command `npm run start`.
