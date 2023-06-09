@@ -9,13 +9,13 @@ const NavBar = () => {
 
     const links = [
         {
-            label: 'Accordion',
-            path: '/Accordion',
+            label: 'Dropdown',
+            path: '/Dropdown',
             secondaryPath: '/'
         },
         {
-            label: 'Dropdown',
-            path: '/Dropdown',
+            label: 'Accordion',
+            path: '/Accordion',
             secondaryPath: ''
         },
         {

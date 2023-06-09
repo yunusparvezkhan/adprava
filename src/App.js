@@ -12,7 +12,11 @@ function App() {
       <div>
 
         <Route path='/'>
-          <AccordionPage />
+          <DropdownPage />
+        </Route>
+
+        <Route path='/Dropdown'>
+          <DropdownPage />
         </Route>
 
         <Route path='/Accordion'>
@@ -21,10 +25,6 @@ function App() {
 
         <Route path='/Button'>
           <ButtonPage />
-        </Route>
-
-        <Route path='/Dropdown'>
-          <DropdownPage />
         </Route>
 
       </div>
