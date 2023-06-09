@@ -36,3 +36,21 @@ This App covers many basic and intermediet level concepts of ReactJS, some of th
 1. Code structuring
 1. Tailwind CSS Styling library
 
+---
+# About the Project
+## The Landing Page (Dropdown Page)
+### Diagram
+#### CLose
+![Dropdown](./src/media/diagrams/dropdown-mock.png)
+#### Open 
+![Dropdown Open](./src/media/diagrams/dropdown-open-mock.png)
+
+The Dropdown page is simply a Dropdown element rendered in screen. When ever use clicks on it, this dropdown opens and lets the user select from one of the options. The only catch here is that this dropdown element is not rendered using any markup Dropdown elements, rather all the logics are written in javascript and rendered using JSX of ReactJS.
+
+### Data Loading
+![Dropdown Data Loading](./src/media/diagrams/dropdown-data-loading-mock.png)
+
+The App invokes a page named `DropdownPage` in it's `return()` function. The `DropdownPage` contains one heading and the `Dropdown` component. The `Dropdown` component is provided with one prop named `DropDownOptions`, and the data for that prop is imported from `./src/data/qnadata.js`. The the `Dropdown` component maps over the data and returns some jsx.
+
+
+
