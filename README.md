@@ -129,3 +129,20 @@ Data loading of `AccordionPage` and `Accordion` component is exactly the same wi
     >**Note**
     >
     > In this last step the url sometimes might not be `localhost:3000`, it can be `localhost:3001` or `localhost:3002` and so on, depending upon if any other server is running on your machine on the `3000` port. So to avoid any problems, try to see what your terminal is telling you after running the command `npm run start`.
+
+
+--- 
+
+# Developer's Instructions
+### Commit conventions
+This project uses the `Delta Commits Convention`. This convention is under development, and this repository is one of pioneer projects to use this convention. A detailed documentation about this convention would be live on [YPK Org](https://github.com/ypkorg/Delta-Commits-Convention).
+
+### How to report issue
+
+* Whenever reporting an issue related to a commit, always make sure to mention the rsa and also the the delta versioning of that commit.
+
+* Keep your descriptions clear and to the point.
+* Mention coding terminologies inside \`  \` backticks.
+
+### How to Contribute
+If you have fixed any problem in this project or created some new features to make this project more beutiful, make sure to create a issue first describing the need for your changes, then wait for the authors to make a new branch for your code, then create pull request to that branch. Pull requests to `master` branch will be mostly ignored.
