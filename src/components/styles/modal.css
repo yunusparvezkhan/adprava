@@ -10,9 +10,10 @@
 
 
 .modal-box {
+    min-width: 500px;
+    min-height: 30vh;
     width: 35%;
     height: auto;
-    min-height: 30vh;
     background-color: #fff;
     text-align: justify;
     position: fixed;
