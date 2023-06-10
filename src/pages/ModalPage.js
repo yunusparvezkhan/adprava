@@ -50,8 +50,8 @@ const ModalPage = () => {
             </div>
 
             {/* This heading is solely built for testing & conformation purposes */}
-            <h2 className='text-xl' >
-                Modal Status : {modalConf ? "Affirmative" : "Negative"}
+            <h2 className='text-2xl font-bold ml-20 pl-5 mt-20 pt-20' >
+                Modal Status : {modalConf === true ? "Affirmative" : ""} {modalConf === false ? "Negative" : ""}
             </h2>
 
         </div>
