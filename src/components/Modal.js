@@ -16,7 +16,7 @@ const Modal = ({ heading, message, closeModal, modalConformation }) => {
     }, [boxClickHandler, bgClickHandler])
 
     const handleNegClick = () => {
-        modalConformation('Negetive')
+        modalConformation('Negative')
         closeModal();
     }
 
