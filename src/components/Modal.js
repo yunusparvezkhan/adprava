@@ -2,7 +2,9 @@ import React from 'react'
 
 const Modal = () => {
     return (
-        <div className='text-lg' >Modal</div>
+        <div>
+            Modal
+        </div>
     )
 }
 
