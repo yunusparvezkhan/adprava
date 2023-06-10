@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './styles/modal.css';
 import Button from './Button';
 
-const Modal = ({ closeModal, modalConformation }) => {
+const Modal = ({ message, closeModal, modalConformation }) => {
     const [boxClickHandler, setBoxClickHandler] = useState(false);
     const [bgClickHandler, setBgClickHandler] = useState(false);
 
@@ -30,8 +30,8 @@ const Modal = ({ closeModal, modalConformation }) => {
             <div className='modal-background' onClick={() => setBgClickHandler(true)} >
                 <div className='modal-box' onClick={() => setBoxClickHandler(true)} >
                     <div className='flex items-center'>
-                        <p className='block p-20 text-xl '>
-                            Hey, here is some message for you. This is a modal box a a a a a and you have to accept the conditions.
+                        <p className='block p-20 mb-10 text-xl '>
+                            {message}
                         </p>
                     </div>
                     <div className='modal-btns'>
