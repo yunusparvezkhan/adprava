@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './styles/modal.css';
 import Button from './Button';
 
-const Modal = ({ message, closeModal, modalConformation }) => {
+const Modal = ({ heading, message, closeModal, modalConformation }) => {
     const [boxClickHandler, setBoxClickHandler] = useState(false);
     const [bgClickHandler, setBgClickHandler] = useState(false);
 
@@ -29,8 +29,9 @@ const Modal = ({ message, closeModal, modalConformation }) => {
         <div>
             <div className='modal-background' onClick={() => setBgClickHandler(true)} >
                 <div className='modal-box' onClick={() => setBoxClickHandler(true)} >
+                    <h3 className='text-2xl text-center mt-10'>{heading}</h3>
                     <div className='flex items-center'>
-                        <p className='block p-20 mb-10 text-xl '>
+                        <p className='block px-20 py-10 mb-20 text-xl '>
                             {message}
                         </p>
                     </div>
