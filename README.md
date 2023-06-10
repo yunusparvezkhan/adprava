@@ -67,6 +67,17 @@ The `AccordionPage` is a basic list of questions, and if clicked, some extended 
 Data loading of `AccordionPage` and `Accordion` component is exactly the same with the `DropdownPage` and `Dropdown` component. The same data is used in a the logics of `Dropdown` component.
 
 
+## Buttons Page
+### Diagram
+![Accordion](./src/media/diagrams/buttons-mock.png)
+### About
+The `ButtonsPage` is essentially a showcase of the button theory in React JS. Here we have a component created as `Button` and that can be used as a normal button. The plus point of this `Button` component is that just by passing some simple prop names we can use button configurations from our 20 presets.
+
+### Data Loading
+The `App` calls the `ButtonsPage` and the `ButtonsPage` calls the `Button` component with either of `primary`, `secondary`, `success`, `warning`, `danger` prop passed to define button's color. Then the `Button` component can be passed with two optional props `outlined` and `rounded`, and those applies exactly the same style that their name suggests. After that if any other prop, default to a `button` element is passed, those are passed to the actuall `button` element in the `Button` component for data related operations.
+
+
+
 ---
 
 
