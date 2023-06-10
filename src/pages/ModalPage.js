@@ -4,6 +4,7 @@ import Button from '../components/Button.js'
 
 const ModalPage = () => {
     const [modalsts, setmodalsts] = useState(false);
+    const [modalConf, setModalConf] = useState();
 
     const handleBtnClick = () => {
         setmodalsts(!modalsts)
@@ -13,9 +14,13 @@ const ModalPage = () => {
         setmodalsts(false);
     }
 
+    const handleModalConformation = (status) => {
+        setModalConf(status)
+    }
+
     const rendermodal = () => {
         if (modalsts) {
-            return <Modal closeModal={handleCloseModal} />
+            return <Modal closeModal={handleCloseModal} modalConformation={handleModalConformation} />
         } else {
             return;
         }
@@ -29,6 +34,12 @@ const ModalPage = () => {
             <div>
                 {rendermodal()}
             </div>
+
+            {/* This heading is solely built for testing & conformation purposes */}
+            <h2 className='text-xl' >
+                Modal Status : {modalConf}
+            </h2>
+
         </div>
     )
 }

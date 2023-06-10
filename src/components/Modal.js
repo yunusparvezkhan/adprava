@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './styles/modal.css';
 import Button from './Button';
 
-const Modal = ({ closeModal }) => {
+const Modal = ({ closeModal, modalConformation }) => {
     const [boxClickHandler, setBoxClickHandler] = useState(false);
     const [bgClickHandler, setBgClickHandler] = useState(false);
 
@@ -14,6 +14,16 @@ const Modal = ({ closeModal }) => {
             setBgClickHandler(false);
         }
     }, [boxClickHandler, bgClickHandler])
+
+    const handleNegClick = () => {
+        modalConformation('Negetive')
+        closeModal();
+    }
+
+    const handleAffClick = () => {
+        modalConformation('Affirmative')
+        closeModal();
+    }
 
     return (
         <div>
@@ -27,10 +37,10 @@ const Modal = ({ closeModal }) => {
                     <div className='modal-btns'>
                         <div className='flex'>
                             <div className='modal-neg-btn' >
-                                <Button danger >Cancel</Button>
+                                <Button danger onClick={handleNegClick} >Cancel</Button>
                             </div>
                             <div className='modal-aff-btn' >
-                                <Button success >Proceed</Button>
+                                <Button success onClick={handleAffClick}>Proceed</Button>
                             </div>
                         </div>
                     </div>
