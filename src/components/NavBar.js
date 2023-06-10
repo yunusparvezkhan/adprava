@@ -51,7 +51,7 @@ const NavBar = () => {
         <div>
             <div className="bg-gray-800 flex items-center">
                 <img src={adpravaLogo} width="150" className='pl-20 mt-2' />
-                <h1 className='text-5xl font-semibold text-gray-100 py-5 pl-2' >Adprava</h1>
+                <h1 className='text-4xl font-thin text-gray-100 py-5 pl-2' style={{ letterSpacing: "5px" }}>Adprava</h1>
                 <div className='navbar-button-cont flex text-white ' >
                     {renderLinks}
                 </div>
