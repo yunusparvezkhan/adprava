@@ -9,9 +9,13 @@ const ModalPage = () => {
         setmodalsts(!modalsts)
     }
 
+    const handleCloseModal = () => {
+        setmodalsts(false);
+    }
+
     const rendermodal = () => {
         if (modalsts) {
-            return <Modal />
+            return <Modal closeModal={handleCloseModal} />
         } else {
             return;
         }
