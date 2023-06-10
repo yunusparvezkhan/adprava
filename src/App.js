@@ -1,9 +1,10 @@
 import React from "react";
+import Route from "./components/Route";
 import ButtonsPage from "./pages/ButtonsPage";
 import AccordionPage from "./pages/AccordionPage";
 import DropdownPage from "./pages/DropdownPage";
 import NavBar from "./components/NavBar";
-import Route from "./components/Route";
+import ModalPage from "./pages/ModalPage";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
 
         <Route path='/Buttons'>
           <ButtonsPage />
+        </Route>
+
+        <Route path='/Modal'>
+          <ModalPage />
         </Route>
 
       </div>

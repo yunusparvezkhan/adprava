@@ -23,6 +23,11 @@ const NavBar = () => {
             path: '/Buttons',
             secondaryPath: ''
         },
+        {
+            label: 'Modal',
+            path: '/Modal',
+            secondaryPath: ''
+        },
 
     ];
 
