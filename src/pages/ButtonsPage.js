@@ -3,7 +3,7 @@ import Button from "../components/Button";
 // Icons  ---->
 import { FaReact } from "react-icons/fa";
 
-function ButtonPage() {
+function ButtonsPage() {
     return (
         <div>
             <label>Normal</label>
@@ -41,4 +41,4 @@ function ButtonPage() {
     );
 }
 
-export default ButtonPage;
+export default ButtonsPage;

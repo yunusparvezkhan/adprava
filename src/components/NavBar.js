@@ -19,8 +19,8 @@ const NavBar = () => {
             secondaryPath: ''
         },
         {
-            label: 'Button',
-            path: '/Button',
+            label: 'Buttons',
+            path: '/Buttons',
             secondaryPath: ''
         },
 
