@@ -4,7 +4,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #00000090;
+    background-color: #000000a1;
     cursor: default;
 }
 
@@ -12,9 +12,9 @@
 .modal-box {
     width: auto;
     height: auto;
-    min-width: 35%;
+    min-width: 40%;
     min-height: 35vh;
-    background-color: aquamarine;
+    background-color: #fff;
     position: fixed;
     left: 50%;
     top: 50%;
