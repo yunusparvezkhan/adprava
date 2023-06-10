@@ -9,9 +9,9 @@ const ModalPage = () => {
     const [bgcolor, setbgcolor] = useState('bg-white');
 
     useEffect(() => {
-        if (modalConf === 'Affirmative') {
+        if (modalConf) {
             setbgcolor('bg-purple-200');
-        } else if (modalConf === 'Negative') {
+        } else if (!modalConf) {
             setbgcolor('bg-white');
         }
     }, [modalConf])
@@ -51,7 +51,7 @@ const ModalPage = () => {
 
             {/* This heading is solely built for testing & conformation purposes */}
             <h2 className='text-xl' >
-                Modal Status : {modalConf}
+                Modal Status : {modalConf ? "Affirmative" : "Negative"}
             </h2>
 
         </div>

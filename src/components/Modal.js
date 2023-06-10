@@ -16,12 +16,12 @@ const Modal = ({ heading, message, closeModal, modalConformation }) => {
     }, [boxClickHandler, bgClickHandler])
 
     const handleNegClick = () => {
-        modalConformation('Negative')
+        modalConformation(false)
         closeModal();
     }
 
     const handleAffClick = () => {
-        modalConformation('Affirmative')
+        modalConformation(true)
         closeModal();
     }
 
