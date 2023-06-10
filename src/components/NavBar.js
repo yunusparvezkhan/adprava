@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import adpravaLogo from '../media/icons/gold-medal.png';
+import adpravaLogo from '../media/logos/blue-AA-in-hindi-trans.png';
 import Link from './Link';
 import useNavigation from '../hooks/navigationHook';
 import '../styles/stylelib.css';
@@ -50,7 +50,7 @@ const NavBar = () => {
     return (
         <div>
             <div className="bg-gray-800 flex items-center">
-                <img src={adpravaLogo} className='pl-20' />
+                <img src={adpravaLogo} width="150" className='pl-20 mt-2' />
                 <h1 className='text-5xl font-semibold text-gray-100 py-5 pl-2' >Adprava</h1>
                 <div className='navbar-button-cont flex text-white ' >
                     {renderLinks}
