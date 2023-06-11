@@ -108,3 +108,6 @@ Date:   Sat Jun 3 16:41:28 2023 +0530 <br>
 
 # Version 1 Narkel 🥥
 The Version 1 `Narkel` contains Three Pages, namely Dropdown, Accordion and Button. Descriptions are given about these pages in the README.md in the root directory.
+
+# Version 2 Angur 🍇
+The Version 2 `Angur` contains a new page `ModalPage` which is a demostration of a `Modal` component. Read more about it in the [Angur Release Notes](./Release%20Notes/Version%202%20Release%20Notes.md).

@@ -28,9 +28,9 @@ const ModalPage = () => {
         setModalConf(status)
     }
 
-    let modalheading = '⚠️ Color Changing Warning ⚠️'
+    let modalheading = '⚠️ Title ⚠️'
 
-    let modalmsg = `If you proceed the Background Color of the Page will change 😜`
+    let modalmsg = `This is a message. This message field is supposed to be used to show some details to the user.`
 
     const rendermodal = () => {
         if (modalsts) {
