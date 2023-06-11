@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ReactDOM from 'react-dom';
 import './styles/modal.css';
 import Button from './Button';
 
@@ -25,7 +26,7 @@ const Modal = ({ heading, message, closeModal, modalConformation }) => {
         closeModal();
     }
 
-    return (
+    return ReactDOM.createPortal(
         <div>
             <div className='modal-background' onClick={() => setBgClickHandler(true)} >
                 <div className='modal-box' onClick={() => setBoxClickHandler(true)} >
@@ -47,8 +48,9 @@ const Modal = ({ heading, message, closeModal, modalConformation }) => {
                     </div>
                 </div>
             </div>
-        </div >
-    )
+        </div >,
+        document.querySelector('.modal-container')
+    );
 }
 
 export default Modal
