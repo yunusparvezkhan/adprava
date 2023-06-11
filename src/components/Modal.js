@@ -7,14 +7,15 @@ const Modal = ({ heading, message, closeModal, modalConformation }) => {
     const [boxClickHandler, setBoxClickHandler] = useState(false);
     const [bgClickHandler, setBgClickHandler] = useState(false);
 
-
     useEffect(() => {
         document.body.classList.add('overflow-hidden')
-    }, [])
+        return () => {
+            document.body.classList.remove('overflow-hidden')
+        }
+    }, []);
 
     useEffect(() => {
         if (bgClickHandler && !boxClickHandler) {
-            document.body.classList.remove('overflow-hidden')
             closeModal();
         } else {
             setBoxClickHandler(false);
@@ -24,13 +25,11 @@ const Modal = ({ heading, message, closeModal, modalConformation }) => {
 
     const handleNegClick = () => {
         modalConformation(false)
-        document.body.classList.remove('overflow-hidden')
         closeModal();
     }
 
     const handleAffClick = () => {
         modalConformation(true)
-        document.body.classList.remove('overflow-hidden')
         closeModal();
     }
 
