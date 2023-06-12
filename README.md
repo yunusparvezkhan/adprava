@@ -76,6 +76,17 @@ The `ButtonsPage` is essentially a showcase of the button theory in React JS. He
 ### Data Loading
 The `App` calls the `ButtonsPage` and the `ButtonsPage` calls the `Button` component with either of `primary`, `secondary`, `success`, `warning`, `danger` prop passed to define button's color. Then the `Button` component can be passed with two optional props `outlined` and `rounded`, and those applies exactly the same style that their name suggests. After that if any other prop, default to a `button` element is passed, those are passed to the actuall `button` element in the `Button` component for data related operations.
 
+## Modal Page
+### Diagram
+#### Close
+![Modal Page](./src/media/diagrams/modal-mock.png)
+#### Open
+![Modal Page](./src/media/diagrams/modal-open-mock.png)
+### About
+`ModalPage` is a demostration of a component `Modal`. `Modal` is basically a popup box component. The `Modal` popup box has a bold centered title, a text for giving some message to the user and two buttons, one for conformaiton, called `Proceed` and another for cancelation, called `Cancel`.
+
+### Data Loading
+Read [Modal Page Release Notes](./Release%20Notes/Version%202%20Release%20Notes.md)
 
 
 ---
