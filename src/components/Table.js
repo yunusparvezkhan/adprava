@@ -2,8 +2,19 @@ import React from 'react'
 
 const Table = ({ data }) => {
     return (
-        <div>
-            <h1 className='xl' >{data[1].name}</h1>
+        <div className='ml-20 mt-10' >
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fruit</th>
+                        <th>Color</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
         </div>
     )
 }
