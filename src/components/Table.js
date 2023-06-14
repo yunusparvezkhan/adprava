@@ -14,9 +14,9 @@ const Table = ({ data, config }) => {
         )
     });
 
-    const renderHeader = config.map((rowH) => {
+    const renderHeader = config.map((columnConfig) => {
         return (
-            <th className='px-10'>{rowH.label}</th>
+            <th className='px-10'>{columnConfig.label}</th>
         )
     })
 
