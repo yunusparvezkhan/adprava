@@ -25,18 +25,7 @@ const Table = ({ data, config }) => {
             <table className='table-auto border-spacing-2' >
                 <thead>
                     <tr className='border-b-2' >
-                        {/* Previously rendered the headers by hard coding all the <th> */}
-                        {/* ------------------------------------------------------------------       */}
-                        {/* <th className='px-10'>Fruit</th>                                 //
-                        <th >Color</th>                                                     //
-                        <th className='px-5' >Count</th>                                   //        */}
-                        {/* --------------------------------------------------------------//         */}
-
-
-                        {/* Now the headers are rendered by mapping the array of objects got from the parent component */}
                         {renderHeader}
-
-
                     </tr>
                 </thead>
                 <tbody>
