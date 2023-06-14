@@ -17,7 +17,7 @@ const TablePage = () => {
         },
         {
             label: 'Color',
-            render: (row) => row.color
+            render: (row) => <div className={` p-5 m-2 ${row.color}`} ></div>
         },
         {
             label: 'Count',

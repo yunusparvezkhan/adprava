@@ -19,7 +19,7 @@ const Table = ({ data, config }) => {
 
     const renderHeader = config.map((columnConfig) => {
         return (
-            <th className='px-10' key={columnConfig.label} >{columnConfig.label}</th>
+            <th className='px-5' key={columnConfig.label} >{columnConfig.label}</th>
         )
     })
 
