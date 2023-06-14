@@ -6,7 +6,7 @@ const Table = ({ data, config }) => {
 
         const renderCells = config.map((colConf) => {
             return (
-                <td className='p-5' >{colConf.render(row)}</td>
+                <td className='p-5' key={colConf.label}>{colConf.render(row)}</td>
             )
         })
 
@@ -19,7 +19,7 @@ const Table = ({ data, config }) => {
 
     const renderHeader = config.map((columnConfig) => {
         return (
-            <th className='px-10'>{columnConfig.label}</th>
+            <th className='px-10' key={columnConfig.label} >{columnConfig.label}</th>
         )
     })
 
