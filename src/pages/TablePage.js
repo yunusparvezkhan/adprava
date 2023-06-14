@@ -22,6 +22,10 @@ const TablePage = () => {
         {
             label: 'Count',
             render: (row) => row.count
+        },
+        {
+            label: 'Sq Count',
+            render: (row) => row.count ** 2
         }
     ]
 
