@@ -9,10 +9,23 @@ const TablePage = () => {
         { name: 'Watermelon', color: 'bg-green-400', count: 2 },
         { name: 'Apple', color: 'bg-red-400', count: 7 },
     ]
+
+    const config = [
+        {
+            label: 'Name'
+        },
+        {
+            label: 'Color'
+        },
+        {
+            label: 'Count'
+        }
+    ]
+
     return (
         <div>
             <h2 className='text-3xl mt-5 ml-20 font-black text-violet-700' >Table Page</h2>
-            <Table data={data} />
+            <Table data={data} config={config} />
         </div>
     )
 }
