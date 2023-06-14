@@ -1,5 +1,6 @@
 import React from 'react'
 import Table from '../components/Table'
+import { string } from 'prop-types';
 
 const TablePage = () => {
     const data = [
@@ -27,12 +28,20 @@ const TablePage = () => {
             label: 'Sq Count',
             render: (row) => row.count ** 2
         }
-    ]
+    ];
+
+    const keyFn = (item) => {
+        if (item.name) {
+            return item.name;
+        } else if (item.label) {
+            return item.label;
+        }
+    }
 
     return (
         <div>
             <h2 className='text-3xl mt-5 ml-20 font-black text-violet-700' >Table Page</h2>
-            <Table data={data} config={config} />
+            <Table data={data} config={config} keyFn={keyFn} />
         </div>
     )
 }

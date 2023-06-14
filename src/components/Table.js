@@ -1,17 +1,17 @@
 import React from 'react'
 
-const Table = ({ data, config }) => {
+const Table = ({ data, config, keyFn }) => {
 
-    const renderRows = data.map((row) => {
+    const renderRows = data.map((rowData) => {
 
         const renderCells = config.map((colConf) => {
             return (
-                <td className='p-5' key={colConf.label}>{colConf.render(row)}</td>
+                <td className='p-5' key={keyFn(colConf)}>{colConf.render(rowData)}</td>
             )
         })
 
         return (
-            <tr key={row.name} className='border-b'>
+            <tr key={keyFn(rowData)} className='border-b'>
                 {renderCells}
             </tr>
         )
@@ -19,7 +19,7 @@ const Table = ({ data, config }) => {
 
     const renderHeader = config.map((columnConfig) => {
         return (
-            <th className='px-5' key={columnConfig.label} >{columnConfig.label}</th>
+            <th className='px-5' key={keyFn(columnConfig)} >{columnConfig.label}</th>
         )
     })
 
