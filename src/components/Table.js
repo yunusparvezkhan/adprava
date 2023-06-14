@@ -12,22 +12,7 @@ const Table = ({ data, config }) => {
 
         return (
             <tr key={row.name} className='border-b'>
-
-
-                {/* Previously used this hard coded <td> listings for basic structuring */}
-                {/* -------------------------------------------------------------------//           */}
-                {/* <td className='p-5' >{row.name}</td>                              //
-                <td className='p-5' >                                                //
-                    <div className={`p-5 m-2 ${row.color}`} ></div>                 //
-                </td>                                                              //
-                <td className='p-5'>{row.count}</td>                              //                */}
-                {/* -------------------------------------------------------------//                 */}
-
-
-                {/* Now rendering each cells by mapping over the config file for the render func inside the mapped func of `data` */}
                 {renderCells}
-
-
             </tr>
         )
     });
