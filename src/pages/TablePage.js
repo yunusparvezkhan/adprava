@@ -12,13 +12,16 @@ const TablePage = () => {
 
     const config = [
         {
-            label: 'Name'
+            label: 'Name',
+            render: (row) => row.name
         },
         {
-            label: 'Color'
+            label: 'Color',
+            render: (row) => row.color
         },
         {
-            label: 'Count'
+            label: 'Count',
+            render: (row) => row.count
         }
     ]
 

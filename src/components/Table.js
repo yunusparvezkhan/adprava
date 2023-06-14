@@ -3,13 +3,31 @@ import React from 'react'
 const Table = ({ data, config }) => {
 
     const renderRows = data.map((row) => {
+
+        const renderCells = config.map((colConf) => {
+            return (
+                <td className='p-5' >{colConf.render(row)}</td>
+            )
+        })
+
         return (
-            <tr key={row.name} className='border-b'  >
-                <td className='p-5' >{row.name}</td>
-                <td className='p-5' >
-                    <div className={`p-5 m-2 ${row.color}`} ></div>
-                </td>
-                <td className='p-5'>{row.count}</td>
+            <tr key={row.name} className='border-b'>
+
+
+                {/* Previously used this hard coded <td> listings for basic structuring */}
+                {/* -------------------------------------------------------------------//           */}
+                {/* <td className='p-5' >{row.name}</td>                              //
+                <td className='p-5' >                                                //
+                    <div className={`p-5 m-2 ${row.color}`} ></div>                 //
+                </td>                                                              //
+                <td className='p-5'>{row.count}</td>                              //                */}
+                {/* -------------------------------------------------------------//                 */}
+
+
+                {/* Now rendering each cells by mapping over the config file for the render func inside the mapped func of `data` */}
+                {renderCells}
+
+
             </tr>
         )
     });
