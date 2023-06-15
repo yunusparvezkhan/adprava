@@ -19,7 +19,7 @@ const Table = ({ data, config, keyFn }) => {
 
     const renderHeader = config.map((columnConfig) => {
         if (columnConfig.header) {
-            return columnConfig.header();
+            return columnConfig.header(keyFn(columnConfig));
         } else {
             return (
                 <th className='px-5' key={keyFn(columnConfig)} >{columnConfig.label}</th>

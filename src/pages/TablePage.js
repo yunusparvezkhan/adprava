@@ -23,7 +23,7 @@ const TablePage = () => {
         {
             label: 'Count',
             render: (row) => row.count,
-            header: () => <th className='bg-red-300' >Count</th>
+            header: (key) => <th key={key} className='bg-red-300' >Count</th>
         },
         {
             label: 'Sq Count',
