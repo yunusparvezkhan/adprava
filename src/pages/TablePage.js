@@ -16,21 +16,24 @@ const TablePage = () => {
         {
             label: 'Name',
             render: (row) => row.name,
-            sortValue: (row) => row.name
+            sortValue: (row) => row.name,
+            sorttype: 'string'
         },
         {
             label: 'Color',
-            render: (row) => <div className={` p-5 m-2 ${row.color}`} ></div>
+            render: (row) => <div className={` p-5 m-2 ${row.color}`} ></div>,
         },
         {
             label: 'Count',
             render: (row) => row.count,
-            sortValue: (row) => row.count
+            sortValue: (row) => row.count,
+            sorttype: 'number'
         },
         {
             label: 'Sq Count',
             render: (row) => row.count ** 2,
-            sortValue: (row) => row.count ** 2
+            sortValue: (row) => row.count ** 2,
+            sorttype: 'number'
         }
     ];
 

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Table from './Table'
-import { FaSortAlphaDown } from 'react-icons/fa'
+import { FaSortAlphaDown, FaSortAlphaDownAlt } from 'react-icons/fa'
+import { BiSortAlt2 } from 'react-icons/bi';
+import { ImSortNumericAsc, ImSortNumbericDesc } from 'react-icons/im'
 
 const SortableTable = (props) => {
     const [sortOrder, setSortOrder] = useState(null);
@@ -22,12 +24,50 @@ const SortableTable = (props) => {
     }
 
     const updatedConfig = config.map((col) => {
+
+        const rendericon = () => {
+            if (sortBy === col.label) {
+                if (col.sorttype === 'string') {
+                    if (sortOrder === 'asc') {
+                        return <FaSortAlphaDown className='mx-1' />
+                    } else if (sortOrder === 'desc') {
+                        return <FaSortAlphaDownAlt className='mx-1' />
+                    } else {
+                        return <BiSortAlt2 className='mx-1' />
+                    }
+                } else if (col.sorttype === 'number') {
+                    if (sortOrder === 'asc') {
+                        return <ImSortNumericAsc className='mx-1' />
+                    } else if (sortOrder === 'desc') {
+                        return <ImSortNumbericDesc className='mx-1' />
+                    } else {
+                        return <BiSortAlt2 className='mx-1' />
+                    }
+                }
+            } else {
+                return <BiSortAlt2 className='mx-1' />
+            }
+        }
+
         if (!col.sortValue) {
             return col;
         } else {
             return {
                 ...col,
-                header: () => <th onClick={() => handleClick(col.label)} className='cursor-pointer'> <div className='flex items-center mx-2'> <FaSortAlphaDown className='mx-1' />{col.label}</div></th>
+                header: () => {
+                    return (
+                        <th onClick={() => handleClick(col.label)} className='cursor-pointer'>
+                            <div className='flex items-center mx-2'>
+                                <div>
+                                    {rendericon()}
+                                </div>
+                                <div>
+                                    {col.label}
+                                </div>
+                            </div>
+                        </th>
+                    )
+                }
             }
         }
     })
@@ -58,4 +98,4 @@ const SortableTable = (props) => {
     )
 }
 
-export default SortableTable
+export default SortableTable;
