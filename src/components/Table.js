@@ -31,11 +31,11 @@ const Table = ({ data, config, keyFn }) => {
         <div className='ml-20 mt-10' >
             <table className='table-auto border-spacing-2' >
                 <thead>
-                    <tr className='border-b-2' >
+                    <tr className='border-b-2 relative' >
                         {renderHeader}
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className='relative' >
                     {renderRows}
                 </tbody>
             </table>
