@@ -15,7 +15,8 @@ const TablePage = () => {
     const config = [
         {
             label: 'Name',
-            render: (row) => row.name
+            render: (row) => row.name,
+            sortValue: (row) => row.name
         },
         {
             label: 'Color',
@@ -24,11 +25,12 @@ const TablePage = () => {
         {
             label: 'Count',
             render: (row) => row.count,
-            header: () => <th className='bg-red-300' >Count</th>
+            sortValue: (row) => row.count
         },
         {
             label: 'Sq Count',
-            render: (row) => row.count ** 2
+            render: (row) => row.count ** 2,
+            sortValue: (row) => row.count ** 2
         }
     ];
 
