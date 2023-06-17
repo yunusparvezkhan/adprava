@@ -33,7 +33,7 @@ const SortableTable = (props) => {
 
         const rendericon = () => {
             if (sortBy === col.label) {
-                if (col.sorttype === 'string') {
+                if (typeof col.sortValue(data[0]) === 'string') {
                     if (sortOrder === 'asc') {
                         return <FaSortAlphaDown className='mx-1' />
                     } else if (sortOrder === 'desc') {
@@ -41,7 +41,7 @@ const SortableTable = (props) => {
                     } else {
                         return <BiSortAlt2 className='mx-1' />
                     }
-                } else if (col.sorttype === 'number') {
+                } else if (typeof col.sortValue(data[0]) === 'number') {
                     if (sortOrder === 'asc') {
                         return <ImSortNumericAsc className='mx-1' />
                     } else if (sortOrder === 'desc') {
