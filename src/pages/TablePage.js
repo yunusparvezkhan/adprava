@@ -46,8 +46,7 @@ const TablePage = () => {
     return (
         <div>
             <h2 className='text-3xl mt-5 ml-20 font-black text-violet-700' >Table Page</h2>
-            {/* <SortableTable data={data} config={config} keyFn={keyFn} /> */}
-            <Table data={data} config={config} keyFn={keyFn} />
+            {data.length > 3 ? <SortableTable data={data} config={config} keyFn={keyFn} /> : <Table data={data} config={config} keyFn={keyFn} />}
         </div>
     )
 }
