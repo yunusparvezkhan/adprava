@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import adpravaLogo from '../media/logos/blue-AA-in-hindi-trans.png';
+import adpravaLogo from '../media/logos/AA-in-Hindi-in-blue-with-techboy.png';
 import Link from './Link';
 import useNavigation from '../hooks/navigationHook';
 import '../styles/stylelib.css';
