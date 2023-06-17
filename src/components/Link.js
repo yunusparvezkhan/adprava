@@ -13,9 +13,9 @@ const Link = ({ to, children, ...rest }) => {
     }
 
     return (
-        <div className='mx-1 px-3 py-2 hover:bg-blue-900 transition duraiton-100 cursor-pointer ' >
-            <a {...rest} href={to} onClick={handleClick} >{children}</a>
-        </div>
+        <a {...rest} href={to} onClick={handleClick} >
+            <button className='mx-1 px-3 py-2 hover:bg-blue-900 transition duraiton-100 cursor-pointer'>{children}</button>
+        </a>
     )
 }
 
