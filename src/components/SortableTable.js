@@ -30,7 +30,6 @@ const SortableTable = (props) => {
 
 
     const updatedConfig = config.map((col) => {
-
         const rendericon = () => {
             if (sortBy === col.label) {
                 if (typeof col.sortValue(data[0]) === 'string') {

@@ -21,6 +21,7 @@ const TablePage = () => {
         {
             label: 'Color',
             render: (row) => <div className={` p-5 m-2 ${row.color}`} ></div>,
+            header: () => <th className='px-5 text-center' key={'Color'} >Color</th>
         },
         {
             label: 'Count',
@@ -45,7 +46,8 @@ const TablePage = () => {
     return (
         <div>
             <h2 className='text-3xl mt-5 ml-20 font-black text-violet-700' >Table Page</h2>
-            <SortableTable data={data} config={config} keyFn={keyFn} />
+            {/* <SortableTable data={data} config={config} keyFn={keyFn} /> */}
+            <Table data={data} config={config} keyFn={keyFn} />
         </div>
     )
 }

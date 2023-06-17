@@ -21,9 +21,7 @@ const Table = ({ data, config, keyFn }) => {
         if (columnConfig.header) {
             return <Fragment key={keyFn(columnConfig)}>{columnConfig.header()}</Fragment>;
         } else {
-            return (
-                <th className='px-5' key={keyFn(columnConfig)} >{columnConfig.label}</th>
-            )
+            return <th className='px-5 text-left' key={keyFn(columnConfig)} >{columnConfig.label}</th>
         }
     })
 
@@ -31,11 +29,11 @@ const Table = ({ data, config, keyFn }) => {
         <div className='ml-20 mt-10' >
             <table className='table-auto border-spacing-2' >
                 <thead>
-                    <tr className='border-b-2 relative' >
+                    <tr className='border-b-2' >
                         {renderHeader}
                     </tr>
                 </thead>
-                <tbody className='relative' >
+                <tbody >
                     {renderRows}
                 </tbody>
             </table>
