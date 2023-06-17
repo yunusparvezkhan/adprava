@@ -26,7 +26,6 @@ const SortableTable = (props) => {
             setSortOrder('asc');
             setSortBy(label);
         }
-        setLastClickedLabel(label);
     }
 
 
