@@ -1,7 +1,7 @@
 
 
 <!-- ![Adprava Logo](./src//media/logos/AA-in-hindi-trans.png)   -->
-<div align="center"><img  src="./src/media/logos/blue-AA-in-hindi-trans.png" width="300" ></div>
+<div align="center"><img  src="./src/media/logos/AA-in-Hindi-in-blue-with-techboy.png" width="300" ></div>
 
 <h1 align="center" >A&nbsp d&nbsp p&nbsp r&nbsp a&nbsp v&nbsp a</h1>
 
