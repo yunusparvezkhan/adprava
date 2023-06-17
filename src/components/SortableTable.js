@@ -7,12 +7,11 @@ import { ImSortNumericAsc, ImSortNumbericDesc } from 'react-icons/im'
 const SortableTable = (props) => {
     const [sortOrder, setSortOrder] = useState(null);
     const [sortBy, setSortBy] = useState(null);
-    const [lastClickedLabel, setLastClickedLabel] = useState(null);
     const { config, data } = props;
 
 
     const handleClick = async (label) => {
-        if (lastClickedLabel === label) {
+        if (sortBy && sortBy === label) {
             if (sortOrder === null) {
                 setSortOrder('asc');
                 setSortBy(label);
