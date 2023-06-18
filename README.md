@@ -86,7 +86,7 @@ The `App` calls the `ButtonsPage` and the `ButtonsPage` calls the `Button` compo
 `ModalPage` is a demostration of a component `Modal`. `Modal` is basically a popup box component. The `Modal` popup box has a bold centered title, a text for giving some message to the user and two buttons, one for conformaiton, called `Proceed` and another for cancelation, called `Cancel`.
 
 ### Data Loading
-Read [Modal Page Release Notes](./Release%20Notes/Version%202%20Release%20Notes.md)
+Read [Modal Page Release Notes](https://github.com/yunusparvezkhan/adprava/blob/3a15947cda92ca14af18a2b4b8dfb7777c5bb4cf/Release_Notes/Version_2_Release_Notes.md)
 
 
 ---
