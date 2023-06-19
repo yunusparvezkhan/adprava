@@ -1,12 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const useCounter = (initialCount) => {
     const [count, setCount] = useState(initialCount);
     const [incrementBy, setIncrementBy] = useState(5);
-
-    useEffect(() => {
-        console.log(count);
-    }, [count])
 
     const handleIncrement = () => {
         setCount(count + 1);
