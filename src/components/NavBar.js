@@ -32,6 +32,11 @@ const NavBar = () => {
             label: 'Table',
             path: '/Table',
             secondaryPath: ''
+        },
+        {
+            label: 'Counter',
+            path: '/Counter',
+            secondaryPath: ''
         }
 
     ];
