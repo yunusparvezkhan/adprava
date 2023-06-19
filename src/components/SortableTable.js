@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Table from './Table';
 import useSort from '../hooks/use-sort';
 import { FaSortAlphaDown, FaSortAlphaDownAlt } from 'react-icons/fa'
@@ -6,8 +6,8 @@ import { BiSortAlt2 } from 'react-icons/bi';
 import { ImSortNumericAsc, ImSortNumbericDesc } from 'react-icons/im'
 
 const SortableTable = (props) => {
-    const { config, data } = props;
     const { sortBy, sortOrder, handleSortReq, sortedData } = useSort(data, config);
+    const { config, data } = props;
 
     const updatedConfig = config.map((col) => {
         const rendericon = () => {
