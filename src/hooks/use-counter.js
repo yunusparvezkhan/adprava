@@ -2,23 +2,6 @@ import { useReducer, useState } from 'react';
 
 
 const reducer = (state, action) => {
-
-    // This code was used before for checking the action types and returning with correct object in the dispatch function
-    // --------------------------------------------------------------------- //
-    // if (action.type === 'CHANGE_COUNT') {                                //
-    //     return {                                                        //
-    //         ...state,                                                  //
-    //         count: state.count + action.payload                       //
-    //     }                                                            //
-    // } else if (action.type === 'CHANGE_INCREMENTBY') {              //                      <--- Previous Code Here (Before [v4 Delta 1.2.1])
-    //     return {                                                   //
-    //         ...state,                                             //
-    //         incrementBy: action.payload                          //
-    //     }                                                       //
-    // }                                                          //
-    // ----------------------------------------------------------//
-
-
     switch (action.type) {
         case 'CHANGE_COUNT':
             return {
@@ -33,7 +16,6 @@ const reducer = (state, action) => {
         default:
             return state;
     }
-
 }
 
 const useCounter = (initialCount) => {
