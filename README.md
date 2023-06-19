@@ -170,7 +170,7 @@ This project uses the `Delta Commits Convention`. This convention is under devel
 If you have fixed any problem in this project or created some new features to make this project more beutiful, make sure to create a issue, describing the need for your changes, then wait for the author(s) to make a new branch for your changes, then create pull request to that branch. Pull requests to `master` branch will be mostly ignored.
 
 
-### Credits
+# Credits
 * The आ in the logo of Adprava is made with ❤️ by [Yunus Parvez Khan](https://instagram.com/yunusparvezkhan)
 
 * The TechBoy using laptop on the curve of आ in the Adprava logo, is made with ❤️ by [Jishu Das](https://instagram.com/jishudas25) 
