@@ -6,8 +6,8 @@ import { BiSortAlt2 } from 'react-icons/bi';
 import { ImSortNumericAsc, ImSortNumbericDesc } from 'react-icons/im'
 
 const SortableTable = (props) => {
-    const { sortBy, sortOrder, handleSortReq, sortedData } = useSort(data, config);
     const { config, data } = props;
+    const { sortBy, sortOrder, handleSortReq, sortedData } = useSort(data, config);
 
     const updatedConfig = config.map((col) => {
         const rendericon = () => {
